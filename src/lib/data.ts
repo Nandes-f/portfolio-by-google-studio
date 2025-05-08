@@ -1,5 +1,5 @@
 import type { LucideIcon } from 'lucide-react';
-import { Smartphone, Code, Database, Cloud, Network, CreditCard, Brain, Bot, MapPin, Briefcase, GraduationCap, Award, Tv } from 'lucide-react';
+import { Smartphone, Code, Database, Cloud, Network, CreditCard, Brain, Bot, MapPin, Briefcase, GraduationCap, Award, Tv, Mail, User } from 'lucide-react'; // Import Mail and User
 
 export interface Skill {
   name: string;
@@ -152,11 +152,12 @@ export const portfolioData = {
     { name: "JavaScript", issuer: "HackerRank" },
   ] as Certification[],
   navLinks: [
-    { href: "#hero", label: "About", icon: Bot },
+    { href: "#hero", label: "About", icon: User }, // Changed icon to User
     { href: "#skills", label: "Skills", icon: Brain },
     { href: "#experience", label: "Experience", icon: Briefcase },
     { href: "#projects", label: "Projects", icon: Smartphone },
     { href: "#education", label: "Education", icon: GraduationCap },
     { href: "#ai-summary", label: "AI Summary", icon: Bot },
+    { href: "#contact", label: "Contact", icon: Mail }, // Added Contact link
   ],
 };

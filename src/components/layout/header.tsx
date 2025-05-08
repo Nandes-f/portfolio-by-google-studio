@@ -5,7 +5,7 @@
 "use client";
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Moon, Sun, Download, Menu, Bot } from 'lucide-react'; // Import Bot icon
+import { Moon, Sun, Download, Menu, User } from 'lucide-react'; // Changed Bot to User icon
 import { portfolioData } from '@/lib/data';
 import { useTheme } from '@/hooks/use-theme'; // Assuming a useTheme hook
 
@@ -16,7 +16,8 @@ export default function Header() {
     <header className="hidden md:flex sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 max-w-screen-2xl items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
-          <Bot className="h-6 w-6 text-primary" />
+          {/* Use a consistent icon, User seems appropriate for a portfolio */}
+          <User className="h-6 w-6 text-primary" /> 
           <span className="font-bold sm:inline-block">{portfolioData.name}</span>
         </Link>
         <nav className="flex items-center gap-4 text-sm lg:gap-6">

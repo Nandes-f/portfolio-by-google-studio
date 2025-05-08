@@ -1,6 +1,6 @@
 import { portfolioData } from '@/lib/data';
 import { Button } from '@/components/ui/button';
-import { Download, Github, Linkedin, Mail } from 'lucide-react';
+import { Download, Github, Linkedin, Mail, User } from 'lucide-react'; // Import User icon
 import Image from 'next/image';
 
 export default function HeroSection() {
@@ -32,8 +32,9 @@ export default function HeroSection() {
             </a>
           </Button>
           <Button size="lg" variant="outline" asChild>
-            <a href="#projects">
-              View Projects
+            <a href="#contact"> {/* Point to contact section */}
+              <Mail className="mr-2 h-5 w-5" /> {/* Use Mail icon */}
+              Contact Me
             </a>
           </Button>
         </div>

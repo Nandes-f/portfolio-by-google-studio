@@ -4,6 +4,7 @@ import ExperienceSection from '@/components/sections/experience-section';
 import ProjectsSection from '@/components/sections/projects-section';
 import EducationSection from '@/components/sections/education-section';
 import DynamicSummarySection from '@/components/sections/dynamic-summary-section';
+import ContactSection from '@/components/sections/contact-section'; // Import ContactSection
 import { Separator } from '@/components/ui/separator';
 
 export default function HomePage() {
@@ -20,6 +21,8 @@ export default function HomePage() {
       <EducationSection />
       <Separator />
       <DynamicSummarySection />
+      <Separator /> {/* Add separator */}
+      <ContactSection /> {/* Add ContactSection */}
     </div>
   );
 }
